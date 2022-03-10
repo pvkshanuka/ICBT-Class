@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://service.chamal/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.chamal/">
+
+<xs:element name="addCustomer" type="tns:addCustomer"/>
+
+<xs:element name="addCustomerResponse" type="tns:addCustomerResponse"/>
+
+<xs:element name="addDriver" type="tns:addDriver"/>
+
+<xs:element name="addDriverResponse" type="tns:addDriverResponse"/>
+
+<xs:element name="addUser" type="tns:addUser"/>
+
+<xs:element name="addUserResponse" type="tns:addUserResponse"/>
+
+<xs:element name="addVehicle" type="tns:addVehicle"/>
+
+<xs:element name="addVehicleResponse" type="tns:addVehicleResponse"/>
+
+<xs:element name="addbranch" type="tns:addbranch"/>
+
+<xs:element name="addbranchProduct" type="tns:addbranchProduct"/>
+
+<xs:element name="addbranchProductResponse" type="tns:addbranchProductResponse"/>
+
+<xs:element name="addbranchResponse" type="tns:addbranchResponse"/>
+
+<xs:element name="addproduct" type="tns:addproduct"/>
+
+<xs:element name="addproductResponse" type="tns:addproductResponse"/>
+
+<xs:element name="addtoCart" type="tns:addtoCart"/>
+
+<xs:element name="addtoCartResponse" type="tns:addtoCartResponse"/>
+
+<xs:element name="checkuser" type="tns:checkuser"/>
+
+<xs:element name="checkuserResponse" type="tns:checkuserResponse"/>
+
+<xs:element name="deleteDriver" type="tns:deleteDriver"/>
+
+<xs:element name="deleteDriverResponse" type="tns:deleteDriverResponse"/>
+
+<xs:element name="deleteUser" type="tns:deleteUser"/>
+
+<xs:element name="deleteUserResponse" type="tns:deleteUserResponse"/>
+
+<xs:element name="deleteVehicle" type="tns:deleteVehicle"/>
+
+<xs:element name="deleteVehicleResponse" type="tns:deleteVehicleResponse"/>
+
+<xs:element name="deletebranch" type="tns:deletebranch"/>
+
+<xs:element name="deletebranchResponse" type="tns:deletebranchResponse"/>
+
+<xs:element name="deleteheadofficeproductsproduct" type="tns:deleteheadofficeproductsproduct"/>
+
+<xs:element name="deleteheadofficeproductsproductResponse" type="tns:deleteheadofficeproductsproductResponse"/>
+
+<xs:element name="getBranchSales" type="tns:getBranchSales"/>
+
+<xs:element name="getBranchSalesResponse" type="tns:getBranchSalesResponse"/>
+
+<xs:element name="getBranches" type="tns:getBranches"/>
+
+<xs:element name="getBranchesResponse" type="tns:getBranchesResponse"/>
+
+<xs:element name="getCart" type="tns:getCart"/>
+
+<xs:element name="getCartResponse" type="tns:getCartResponse"/>
+
+<xs:element name="getCustomer" type="tns:getCustomer"/>
+
+<xs:element name="getCustomerCart" type="tns:getCustomerCart"/>
+
+<xs:element name="getCustomerCartResponse" type="tns:getCustomerCartResponse"/>
+
+<xs:element name="getCustomerResponse" type="tns:getCustomerResponse"/>
+
+<xs:element name="getStockRequest" type="tns:getStockRequest"/>
+
+<xs:element name="getStockRequestResponse" type="tns:getStockRequestResponse"/>
+
+<xs:element name="getStockSendingBranchID" type="tns:getStockSendingBranchID"/>
+
+<xs:element name="getStockSendingBranchIDResponse" type="tns:getStockSendingBranchIDResponse"/>
+
+<xs:element name="getStockSendingStockAmount" type="tns:getStockSendingStockAmount"/>
+
+<xs:element name="getStockSendingStockAmountResponse" type="tns:getStockSendingStockAmountResponse"/>
+
+<xs:element name="getallDrivers" type="tns:getallDrivers"/>
+
+<xs:element name="getallDriversResponse" type="tns:getallDriversResponse"/>
+
+<xs:element name="getallUsers" type="tns:getallUsers"/>
+
+<xs:element name="getallUsersResponse" type="tns:getallUsersResponse"/>
+
+<xs:element name="getallvehicles" type="tns:getallvehicles"/>
+
+<xs:element name="getallvehiclesResponse" type="tns:getallvehiclesResponse"/>
+
+<xs:element name="getbranch" type="tns:getbranch"/>
+
+<xs:element name="getbranchProducts" type="tns:getbranchProducts"/>
+
+<xs:element name="getbranchProductsResponse" type="tns:getbranchProductsResponse"/>
+
+<xs:element name="getbranchRequest" type="tns:getbranchRequest"/>
+
+<xs:element name="getbranchRequestResponse" type="tns:getbranchRequestResponse"/>
+
+<xs:element name="getbranchResponse" type="tns:getbranchResponse"/>
+
+<xs:element name="getheadofficeproducts" type="tns:getheadofficeproducts"/>
+
+<xs:element name="getheadofficeproductsResponse" type="tns:getheadofficeproductsResponse"/>
+
+<xs:element name="getpendingRequests" type="tns:getpendingRequests"/>
+
+<xs:element name="getpendingRequestsResponse" type="tns:getpendingRequestsResponse"/>
+
+<xs:element name="getsingleHeadOfficeProduct" type="tns:getsingleHeadOfficeProduct"/>
+
+<xs:element name="getsingleHeadOfficeProductResponse" type="tns:getsingleHeadOfficeProductResponse"/>
+
+<xs:element name="getusers" type="tns:getusers"/>
+
+<xs:element name="getusersResponse" type="tns:getusersResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="makeStockRequest" type="tns:makeStockRequest"/>
+
+<xs:element name="makeStockRequestResponse" type="tns:makeStockRequestResponse"/>
+
+<xs:element name="updateHeadofficeStock" type="tns:updateHeadofficeStock"/>
+
+<xs:element name="updateHeadofficeStockResponse" type="tns:updateHeadofficeStockResponse"/>
+
+<xs:element name="updateStockRequest" type="tns:updateStockRequest"/>
+
+<xs:element name="updateStockRequestResponse" type="tns:updateStockRequestResponse"/>
+
+<xs:element name="updateStockSendingStockAmount" type="tns:updateStockSendingStockAmount"/>
+
+<xs:element name="updateStockSendingStockAmountResponse" type="tns:updateStockSendingStockAmountResponse"/>
+
+<xs:element name="updateUser" type="tns:updateUser"/>
+
+<xs:element name="updateUserResponse" type="tns:updateUserResponse"/>
+
+<xs:element name="updatebranchNewstock" type="tns:updatebranchNewstock"/>
+
+<xs:element name="updatebranchNewstockResponse" type="tns:updatebranchNewstockResponse"/>
+
+<xs:element name="updatecart" type="tns:updatecart"/>
+
+<xs:element name="updatecartResponse" type="tns:updatecartResponse"/>
+
+<xs:element name="validateBranchProducts" type="tns:validateBranchProducts"/>
+
+<xs:element name="validateBranchProductsResponse" type="tns:validateBranchProductsResponse"/>
+
+<xs:complexType name="getallDrivers">
+<xs:sequence>
+<xs:element name="getallDrivers" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallDriversResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:driver" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="driver">
+<xs:complexContent>
+<xs:extension base="tns:user">
+<xs:sequence>
+<xs:element name="driver_ID" type="xs:int"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:sequence>
+<xs:element name="branch_ID" type="xs:int"/>
+<xs:element name="fname" type="xs:string" minOccurs="0"/>
+<xs:element name="lname" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="userID" type="xs:int"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatecart">
+<xs:sequence>
+<xs:element name="updatecart" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatecartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDriver">
+<xs:sequence>
+<xs:element name="deleteDriver" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addbranch">
+<xs:sequence>
+<xs:element name="adbranch" type="tns:branch" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="branch">
+<xs:sequence>
+<xs:element name="branchId" type="xs:int"/>
+<xs:element name="branch_Type" type="xs:string" minOccurs="0"/>
+<xs:element name="location" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addbranchResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addproduct">
+<xs:sequence>
+<xs:element name="addproduct" type="tns:headofficeProducts" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="headofficeProducts">
+<xs:sequence>
+<xs:element name="headoffice_prodctID" type="xs:int"/>
+<xs:element name="headofficeproduct_name" type="xs:string" minOccurs="0"/>
+<xs:element name="headofficeproduct_price" type="xs:int"/>
+<xs:element name="headofficeproduct_quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addproductResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateBranchProducts">
+<xs:sequence>
+<xs:element name="validateBranchProducts" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateBranchProductsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:branchProducts" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="branchProducts">
+<xs:sequence>
+<xs:element name="branch_ID" type="xs:int"/>
+<xs:element name="branchproduct_ID" type="xs:int"/>
+<xs:element name="headofficeproduct_ID" type="xs:int"/>
+<xs:element name="price" type="xs:int"/>
+<xs:element name="productName" type="xs:string" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getbranchRequest">
+<xs:sequence>
+<xs:element name="getbranchRequest" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getbranchRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:stockrequest" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stockrequest">
+<xs:sequence>
+<xs:element name="accepted_branch" type="xs:string" minOccurs="0"/>
+<xs:element name="branch_Id" type="xs:int"/>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+<xs:element name="headofficeproduct_Id" type="xs:int"/>
+<xs:element name="quantity" type="xs:int"/>
+<xs:element name="request_ID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUser">
+<xs:sequence>
+<xs:element name="addUser" type="tns:user" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerCart">
+<xs:sequence>
+<xs:element name="getCustomerCart" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerCartResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cart" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cart">
+<xs:sequence>
+<xs:element name="branchProduct_ID" type="xs:int"/>
+<xs:element name="branch_ID" type="xs:int"/>
+<xs:element name="cart_Id" type="xs:int"/>
+<xs:element name="customer_Id" type="xs:int"/>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+<xs:element name="order_status" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:int"/>
+<xs:element name="product_Name" type="xs:string" minOccurs="0"/>
+<xs:element name="quantity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteheadofficeproductsproduct">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteheadofficeproductsproductResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkuser">
+<xs:sequence>
+<xs:element name="checkuser" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkuserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addtoCart">
+<xs:sequence>
+<xs:element name="addtoCart" type="tns:cart" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addtoCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallUsers">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getallUsersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getbranch">
+<xs:sequence>
+<xs:element name="getbranch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getbranchResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:branch" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatebranchNewstock">
+<xs:sequence>
+<xs:element name="updatebranchNewstock" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatebranchNewstockResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStockRequest">
+<xs:sequence>
+<xs:element name="getStockRequest" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStockRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:stockrequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStockSendingBranchID">
+<xs:sequence>
+<xs:element name="getStockSendingBranchID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStockSendingBranchIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateHeadofficeStock">
+<xs:sequence>
+<xs:element name="updateHeadofficeStock" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateHeadofficeStockResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCustomer">
+<xs:sequence>
+<xs:element name="addCustomer" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customers">
+<xs:complexContent>
+<xs:extension base="tns:user">
+<xs:sequence>
+<xs:element name="contact" type="xs:string" minOccurs="0"/>
+<xs:element name="customer_Id" type="xs:int"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="addCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBranches">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getBranchesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:branch" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getpendingRequests">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getpendingRequestsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:stockrequest" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBranchSales">
+<xs:sequence>
+<xs:element name="getBranchSales" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBranchSalesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cart" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStockSendingStockAmount">
+<xs:sequence>
+<xs:element name="getStockSendingStockAmount" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStockSendingStockAmountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomer">
+<xs:sequence>
+<xs:element name="getCustomer" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallvehicles">
+<xs:sequence>
+<xs:element name="getallvehicles" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallvehiclesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:vehicle" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vehicle">
+<xs:sequence>
+<xs:element name="branch_ID" type="xs:int"/>
+<xs:element name="vehicle_ID" type="xs:int"/>
+<xs:element name="vehicle_no" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteVehicle">
+<xs:sequence>
+<xs:element name="deleteVehicle" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteVehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateUser">
+<xs:sequence>
+<xs:element name="st" type="tns:user" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getsingleHeadOfficeProduct">
+<xs:sequence>
+<xs:element name="getsingleHeadOfficeProduct" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getsingleHeadOfficeProductResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:headofficeProducts" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCart">
+<xs:sequence>
+<xs:element name="getCart" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCartResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cart" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addVehicle">
+<xs:sequence>
+<xs:element name="addVehicle" type="tns:vehicle" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addVehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletebranch">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletebranchResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addbranchProduct">
+<xs:sequence>
+<xs:element name="addbranchProduct" type="tns:branchProducts" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addbranchProductResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getbranchProducts">
+<xs:sequence>
+<xs:element name="getbranch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getbranchProductsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:branchProducts" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addDriver">
+<xs:sequence>
+<xs:element name="addDriver" type="tns:driver" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStockSendingStockAmount">
+<xs:sequence>
+<xs:element name="updateStockSendingStockAmount" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStockSendingStockAmountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUser">
+<xs:sequence>
+<xs:element name="deleteUser" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStockRequest">
+<xs:sequence>
+<xs:element name="updateStockRequest" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStockRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getusers">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getusersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeStockRequest">
+<xs:sequence>
+<xs:element name="makeStockRequest" type="tns:stockrequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="makeStockRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getheadofficeproducts">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getheadofficeproductsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:headofficeProducts" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
