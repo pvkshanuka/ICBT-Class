@@ -8,6 +8,11 @@ import com.mycompany.testmavenproject.modles.user.User;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  *
@@ -16,16 +21,27 @@ import javax.ws.rs.PathParam;
 
 @Path("/user")
 public class UserController {
+    private static String BASE_CLASS = "UserController ->";
+    private static Logger logger = LogManager.getLogger(UserController.class);
     
     @GET
     @Path("/{id}")
-    public User getUser(@PathParam("id") String userid){
-    
+    @Produces(MediaType.APPLICATION_JSON)
+    public User getUser(@PathParam("id") String id){
+        
+        logger.info("Info log message");
         User user = new User();
         user.setFirstName("Kusal");
         user.setLastName("Shanuka");
         
         return  user;
+        
+    }
+    
+    @GET
+    public Response getUser(){
+        logger.info("Info log message");
+        return Response.status(Response.Status.OK).entity("AWA AWA AWA").build();
         
     }
     
