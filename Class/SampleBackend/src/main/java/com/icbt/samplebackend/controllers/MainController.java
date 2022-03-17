@@ -4,16 +4,12 @@
  */
 package com.icbt.samplebackend.controllers;
 
-<<<<<<< HEAD
 import com.icbt.samplebackend.config.DBConfig;
 import com.icbt.samplebackend.modles.response.ErrorData;
 import com.icbt.samplebackend.modles.response.ResponseData;
 import com.icbt.samplebackend.modles.user.User;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-=======
-import com.icbt.samplebackend.modles.User;
->>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -24,10 +20,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-<<<<<<< HEAD
 import javax.ws.rs.core.Response;
-=======
->>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
 
 /**
  *
@@ -36,25 +29,16 @@ import javax.ws.rs.core.Response;
 @Path("/main")
 public class MainController {
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
     //SEARCH
     @GET
     public String testGET() {
         return "Test called GET!";
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
     //CREATE
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-<<<<<<< HEAD
     public Response testPOST(User user) {
 
         if (user.getName().isEmpty()) {
@@ -72,21 +56,6 @@ public class MainController {
 
     }
 
-=======
-    public User testPOST(User user) {
-        
-        if (user.getName().isEmpty()) {
-            return null;
-        }
-        
-        if (user.getAge() > 25) {
-            user.setName("OLD "+user.getName());
-        }
-        
-        return user;
-    }
-    
->>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
     //UPDATE
     @PUT
     public String testPUT() {
@@ -98,7 +67,6 @@ public class MainController {
     public String testDELETE() {
         return "Test called DELETE!";
     }
-<<<<<<< HEAD
 
     @GET
     @Path("greeting")
@@ -131,19 +99,6 @@ public class MainController {
             return Response.status(Response.Status.CONFLICT).entity(ResponseData.getResponseData().setError(ErrorData.getErrorData().setErrorCode("4044").setErrorMessage("User not found."))).build();
         }
 
-=======
-    
-    @GET
-    @Path("greeting")
-    public String testGET(@QueryParam("name") String txt) {
-        return "Test called GET! "+txt;
-    }
-    
-    @GET
-    @Path("/{name}")
-    public String testGETPP(@PathParam("name") String txt) {
-        return "Test called GET! "+txt;
->>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
     }
 
 }
