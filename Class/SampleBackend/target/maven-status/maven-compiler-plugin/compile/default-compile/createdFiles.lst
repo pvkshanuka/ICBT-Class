@@ -1,6 +1,10 @@
 com\icbt\samplebackend\controllers\MainController.class
 com\icbt\samplebackend\controllers\MainController1.class
+<<<<<<< HEAD
 com\icbt\samplebackend\config\DBConfig.class
 com\icbt\samplebackend\modles\response\ErrorData.class
 com\icbt\samplebackend\modles\response\ResponseData.class
 com\icbt\samplebackend\modles\user\User.class
+=======
+com\icbt\samplebackend\modles\User.class
+>>>>>>> 189dfe63d0fb4b3e87c0c43e324ff56b13138d6d
