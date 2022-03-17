@@ -1,2 +1,3 @@
 com\mycompany\testmavenproject\controllers\UserController.class
+com\mycompany\testmavenproject\cofig\SecurityInterceptor.class
 com\mycompany\testmavenproject\modles\user\User.class
